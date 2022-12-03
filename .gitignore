@@ -1,0 +1,9 @@
+# Jupyter notebooks
+.ipynb_checkpoints
+
+# Python
+*.pyc
+
+# Apples
+.DS_Store
+__MACOSX/
