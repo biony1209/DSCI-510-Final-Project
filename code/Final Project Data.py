@@ -67,39 +67,10 @@ cf['covid_status'] = 0
 # In[52]:
 
 
-frames = [df, cf]
-
-result = pd.concat(frames, ignore_index=True)
-
-
-# In[53]:
-
-
-result = result[~result['outcome'].isnull()]
-result['outcome'] = result['outcome'].astype(int)
-result['age'] = result['age'].astype(int)
-result['sex'] = result['sex'].astype(int)
-result['hypertension'] = result['hypertension'].astype(int)
-result['diabetes'] = result['diabetes'].astype(int)
-result['covid_status'] = result['covid_status'].astype(int)
-
-
-# In[54]:
-
-
-result = result[result['outcome'] != 98]
-result = result[result['sex'] != 98]
-result = result[result['hypertension'] != 98]
-result = result[result['diabetes'] != 98]
-
-
-# In[55]:
-
-
 df
 
 
-# In[56]:
+# In[53]:
 
 
 cf
