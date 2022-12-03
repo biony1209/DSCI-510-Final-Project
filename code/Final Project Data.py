@@ -67,8 +67,8 @@ df['outcome'][df['outcome']!=1]=0.0
 # In[51]:
 
 
-df['covid_status'] = 0
-cf['covid_status'] = 1
+df['covid_status'] = 1
+cf['covid_status'] = 0
 
 
 # In[52]:
