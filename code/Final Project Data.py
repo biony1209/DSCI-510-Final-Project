@@ -1,29 +1,29 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[42]:
+# In[7]:
 
 
 import pandas as pd
 
 
-# In[43]:
+# In[8]:
 
 
-df = pd.read_csv('covidtest.csv')
-bf = pd.read_csv('data01.csv')
+covid = pd.read_csv('covidtest.csv')
+noncovid = pd.read_csv('data01.csv')
 
 
 # In[44]:
 
 
-df.rename({'date_died': 'outcome'}, axis=1, inplace=True)
+covid.rename({'date_died': 'outcome'}, axis=1, inplace=True)
 
 
 # In[45]:
 
 
-cf = bf[["ID", "outcome", "age", "gendera", "hypertensive", "diabetes"]]
+noncovid = bf[["ID", "outcome", "age", "gendera", "hypertensive", "diabetes"]]
 
 
 # In[46]:
@@ -64,13 +64,13 @@ df['covid_status'] = 1
 cf['covid_status'] = 0
 
 
-# In[52]:
+# In[55]:
 
 
 df
 
 
-# In[53]:
+# In[56]:
 
 
 cf
