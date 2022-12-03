@@ -5,13 +5,6 @@
 
 
 import pandas as pd
-import numpy as np
-pd.options.mode.chained_assignment = None
-from sklearn.linear_model import LogisticRegression
-from sklearn.neighbors import NearestNeighbors
-import matplotlib.pyplot as plt
-import seaborn as sns
-import maths
 
 
 # In[43]:
